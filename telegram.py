@@ -31,7 +31,7 @@ while contador < 8183:
     receita.append(Receita(data2,data3))                     
     contador = contador + 1
     
-bot = telepot.Bot("620912783:AAFs0nAdkvxsnjFTvYkFfJZALP5RerXyB7s")
+bot = telepot.Bot("ID-DO-SEU-BOT-AQUI")
 
 
 pessoas = list()
