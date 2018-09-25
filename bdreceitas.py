@@ -80,8 +80,8 @@ class Receita:
     def getIngredientes(self):
         return self.ingredientes
 
-    '''def getPreparo(self):
-        return self.preparo'''
+    def getPreparo(self):
+        return self.preparo
 
     ''' --- [ FUNÇÕES DE QUANTIDADES ] --- '''
 
@@ -96,6 +96,9 @@ class Receita:
             return len(self.preparo)
         else:
             return 0
+
+    def temModoPreparo(self):
+        return self.temPreparo
 
         
             
