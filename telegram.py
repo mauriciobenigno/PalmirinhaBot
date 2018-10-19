@@ -170,15 +170,6 @@ def analizaMensagem(mensagem,data):
             bot.sendMessage(data['id'],"Ta bom "+pessoa.getSexo()+", se quiser que a vovo indique novamente, basta pedir de novo ta?!")
             roteiro = 2
 
-    if roteito == 4:
-
-    if roteito == 5:
-
-    if roteito == 6:
-
-    if roteito == 7:
-
-    if roteito == 8:  
     
     for item in listaTCHAU:
         if re.search(mensagem, item, re.IGNORECASE):
@@ -207,7 +198,7 @@ def recebendoMensagem(msg):
     
     analizaMensagem(msg['text'],data)
     
-    print (data['username']+" enviou: "+msg['text'])
+    print (data['username']+str(data['id'])+" enviou: "+msg['text'])
 
     '''if pessoaExiste(data['id']) == True:
         analizaMensagem(msg['text'],pessoaPos(data['id']))
