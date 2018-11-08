@@ -23,7 +23,7 @@ with open('afrodite.json') as f:
 # Inicializa uma lista
 receita = list()
 
-# Esse laço de repetição preenche a lista com Objetos do tipo receita e dados brutos do banco de dados
+# Esse laÃ§o de repetiÃ§Ã£o preenche a lista com Objetos do tipo receita e dados brutos do banco de dados
 contador = 0
 while contador < 8183:
     data2 = data[contador]['nome']
@@ -34,7 +34,7 @@ pattern = re.compile("x")
 print (pattern.search("dog"))
 
     
-bot = telepot.Bot("620912783:AAFs0nAdkvxsnjFTvYkFfJZALP5RerXyB7s")
+bot = telepot.Bot("COLOQUEAQUISEUCÃ“DIGODOBOTFATHER")
 
 falouOI = ("Nao")
 roteiro = 0 #Seguindo um roteiro para consultar uma receita
@@ -64,9 +64,9 @@ def pessoaPos(id):
         contador=contador+1
 
 def analizaMensagem(mensagem,data):
-    listaOI= ("OI","Oi","oi","ola","Ola","Olá","Hi","hi","Hey","hey","Ei","ei","Eai","eai","Eae","eae")
+    listaOI= ("OI","Oi","oi","ola","Ola","OlÃ¡","Hi","hi","Hey","hey","Ei","ei","Eai","eai","Eae","eae")
     listaTCHAU = ("Tchau","tchau","Xau","xau","Fui","fui","Zarpei","zarpei")
-    listaNOME = ("Palmirinha","palmirinha","amiguinha","vó")
+    listaNOME = ("Palmirinha","palmirinha","amiguinha","vÃ³")
     listaDESCULPA = ("desculpa","desculpe","sorry","desculpe-me")
     
     global falouOI
@@ -111,11 +111,11 @@ def analizaMensagem(mensagem,data):
                 return True
 
     if roteiro == 2:
-        ''' EM ROTEIRO 2 SÃO DEFINIDO OS COMANDOS QUE FAZEM CONSULTA DE RECEITAS '''
+        ''' EM ROTEIRO 2 SÃƒO DEFINIDO OS COMANDOS QUE FAZEM CONSULTA DE RECEITAS '''
         
         if re.search(mensagem, "como?", re.IGNORECASE):
-            #Colocar aqui a vovo pra falar as instruções
-            bot.sendMessage(data['id'],"Agora só digitar os comandos, ta "+pessoa.getSexo()+"?!")
+            #Colocar aqui a vovo pra falar as instruÃ§Ãµes
+            bot.sendMessage(data['id'],"Agora sÃ³ digitar os comandos, ta "+pessoa.getSexo()+"?!")
 
         # Palmirinha indica uma receita aleatoria
         elif re.search(mensagem, "me indica uma receita", re.IGNORECASE):
@@ -149,7 +149,7 @@ def analizaMensagem(mensagem,data):
 
     if roteito == 3:
         if re.search(mensagem, "sim", re.IGNORECASE):
-            #Colocar aqui a vovo pra falar as instruções
+            #Colocar aqui a vovo pra falar as instruÃ§Ãµes
             bot.sendMessage(data['id'],"Otimo "+pessoa.getSexo()+"!")
             bot.sendMessage(data['id'],"Pra fazer "+receita[numeroAleatorio].getNome()+" basta ter o seguinte:")
             listaIngrediente = receita[numeroAleatorio].getIngredientes()
@@ -188,7 +188,7 @@ def analizaMensagem(mensagem,data):
             bot.sendMessage(data['id'],falouOI)
             return True
     
-    bot.sendMessage(data['id'],"Amiguinho, eu não entendi!")
+    bot.sendMessage(data['id'],"Amiguinho, eu nÃ£o entendi!")
     return False
 
 
